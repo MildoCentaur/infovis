@@ -1,0 +1,19 @@
+{
+    "name": "infovis/grupoI",
+    "description": "Premium and Open Source dashboard template with responsive and high quality UI. For Free!",
+    "type": "library",
+    "license": "MIT",
+	"require": {},
+	"require-dev": {},
+	"autoload": {},
+	"authors": [
+		{
+			"name": "Alejandro Mildiner",
+			"email": "alejandro.mildiner@gmail.com"
+		},
+		{
+			"name": "Marianela Bauche",
+			"email": "marianelabauche@gmail.com"
+		}
+	]
+}

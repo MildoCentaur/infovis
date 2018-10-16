@@ -1,0 +1,14 @@
+index:
+  name: Inicio
+  icon: fe fe-home
+  url: index.html
+
+interface:
+  name: Sumate
+  icon: fe fe-check-square
+  url: cards.html
+
+components:
+  name: Blog
+  icon: fe fe-calendar
+  url: blog.html
