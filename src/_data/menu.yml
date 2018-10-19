@@ -1,14 +1,14 @@
 index:
-  name: Inicio
+  name: Analisis de datos
   icon: fe fe-home
   url: index.html
 
-interface:
-  name: Sumate
-  icon: fe fe-check-square
+pregunta2:
+  name: Audios
+  icon: fa fa-question-circle-o
   url: cards.html
 
 components:
-  name: Blog
-  icon: fe fe-calendar
+  name: cambiar 3
+  icon: fa fa-question-circle-o
   url: blog.html

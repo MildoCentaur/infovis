@@ -5,69 +5,98 @@ menu: index
 ---
 
 
-<div class="container" style="background-image:url('images/lake.bmp');background-repeat: no-repeat;background-size: 100% 100%;">
+<div class="container"
+     style="background-image:url('images/lake.bmp');background-repeat: no-repeat;background-size: 100% 100%;">
 
     {% include page-title.html title="" %}
 
     <div class="row row-cards">
         <div class="col-md-12">
-            <div class="alert alert-info"style="height: 6rem;">Using the bird call collection and the included map of the Wildlife Preserve, characterize the patterns of all of the bird species in the Preserve over the time of the collection. <br/>Please assume we have a reasonable distribution of sensors and human collectors providing the recordings, so that the patterns are reasonably representative of the bird <br/>locations across the area. Do you detect any trends or anomalies in the patterns? Please limit your answer to 10 images and 1000 words.</div>
-            <i class="fa fa-question-circle-o alert-info" style="font-size: 5rem;position:relative;top: -6.5rem;left: 68.5rem;height: 0px"></i>
+            <div class="alert" style="height: 6rem;">Using the bird call collection and the included map of the Wildlife
+                Preserve, characterize the patterns of all of the bird species in the Preserve over the time of the
+                collection. <br/>Please assume we have a reasonable distribution of sensors and human collectors
+                providing the recordings, so that the patterns are reasonably representative of the bird <br/>locations
+                across the area. Do you detect any trends or anomalies in the patterns? Please limit your answer to 10
+                images and 1000 words.
+            </div>
+
+        </div>
+        <div class="col-6 col-sm-4 col-lg-2">
+            {% include cards/stats-1.html number="33" title="Años digitalizados" percentage=3 %}
         </div>
 
-        <div class="col-6 col-sm-4 col-lg-2">
-            {% include cards/stats-1.html number=">800" title="Aves relevadas" percentage=6 %}
-        </div>
         <div class="col-6 col-sm-4 col-lg-2">
             {% include cards/stats-1.html number=19 title="Especies" percentage=3 %}
         </div>
+
         <div class="col-6 col-sm-4 col-lg-2">
-            {% include cards/stats-1.html number="100KM2" title="Superficie" percentage=9 %}
+            {% include cards/stats-1.html number="2080" title="Audios registrados" percentage=2 %}
+        </div>
+
+        <div class="col-6 col-sm-4 col-lg-2">
+            {% include cards/stats-1.html number="8" title="Vocalizaciones" percentage=6 %}
         </div>
         <div class="col-6 col-sm-4 col-lg-2">
-            {% include cards/stats-1.html number="34" title="Años digitalizados" percentage=3 %}
+            {% include cards/stats-1.html number="5" title="Calidades de sonido" percentage=9 %}
         </div>
         <div class="col-6 col-sm-4 col-lg-2">
-            {% include cards/stats-1.html number="2081" title="Audios registrados" percentage=2 %}
+            {% include cards/stats-1.html number=300 title="Voluntarios" percentage=-1 %}
         </div>
-        <div class="col-6 col-sm-4 col-lg-2">
-            {% include cards/stats-1.html number=621 title="Voluntarios" percentage=-1 %}
-        </div>
-        <div class="col-lg-6" style="margin-bottom: 3em;">
+        <div class="col-lg-6" >
             {% include cards/bird-history.html %}
         </div>
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-sm-6">
-                    {% include cards/chart.html height=12 title="proporcion de pajaritos" id="chart-donut" data="donut"
-                    %}
+        <div class="col-lg-6" >
+            {% include cards/chart.html height=12 title="proporcion de pajaritos" id="chart-donut" data="donut" %}
+        </div>
+        <!--<div class="col-lg-6">-->
+            <!--<div class="row">-->
+                <!--<div class="col-sm-6">-->
+                    <!--{ include cards/digit.html color="red" title="cantidad de audios empresa" digit="15" width="15%" %}-->
+                <!--</div>-->
+                <!--<div class="col-sm-6">-->
+                    <!--{ include cards/digit.html color="green" title="cantidad de audios ong" digit="2081" width="100%"-->
+                    <!--%}-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+
+    <div class="row row-cards">
+        <div class="col-md-12">
+            <div class="alert alert-info" style="height: 6rem;">Using the bird call collection and the included map of
+                the Wildlife Preserve, characterize the patterns of all of the bird species in the Preserve over the
+                time of the collection. <br/>Please assume we have a reasonable distribution of sensors and human
+                collectors providing the recordings, so that the patterns are reasonably representative of the bird
+                <br/>locations across the area. Do you detect any trends or anomalies in the patterns? Please limit your
+                answer to 10 images and 1000 words.
+
+            </div>
+
+        </div>
+        <i class="fa fa-question-circle-o alert-info"
+           style="font-size: 5rem;position:relative;top: -6.5rem;left: 69.5rem;height: 0px"></i>
+        <div class="col-md-6 col-lg-12">
+            <div class="row" style="height: 1970px;">
+                <div class="col-lg-6" >
+                    {% include cards/grafico3.html %}
                 </div>
-                <div class="col-sm-6">
-                    {% include cards/chart.html height=12 title="Chart title" id="chart-pie" data="pie" %}
-                </div>
-                <div class="col-sm-6">
-                    {% include cards/digit.html color="red" title="cantidad de audios empresa" digit="15" width="15%" %}
-                </div>
-                <div class="col-sm-6">
-                    {% include cards/digit.html color="green" title="cantidad de audios ong" digit="100" width="100%" %}
+                <div class="col-md-6" >
+                    {% include cards/grafico4.html %}
+                    <div class="alert alert-warning">Using the bird call collection and the
+                        included map of the Wildlife Preserve, characterize the patterns of all of the bird species in
+                        the Preserve over the time of the collection. <br/>Please assume we have a reasonable
+                        distribution of sensors and human collectors providing the recordings, so that the patterns are
+                        reasonably representative of the bird <br/>locations across the area. Do you detect any trends
+                        or anomalies in the patterns? Please limit your answer to 10 images and 1000 words.
+                    </div>
+                    {% include cards/grafico5.html %}
                 </div>
             </div>
         </div>
+        {% include cards/grafico6.html %}
     </div>
 
 
-
-
-    <div class="col-md-6 col-lg-12">
-        <div class="row">
-            <div class="col-lg-6">
-                {% include cards/grafico4.html %}
-            </div>
-            <div class="col-md-6">
-                {% include cards/grafico5.html %}
-            </div>
-        </div>
-    </div>
     <div class="col-md-6 col-lg-12">
         <div class="row">
             <div class="col-sm-6 col-lg-3">
@@ -97,12 +126,15 @@ menu: index
         </div>
     </div>
 
-    <div class="col-lg-12">
-        {% include cards/average-bird-location.html %}
-    </div>
 
     <div class="col-lg-12">
-        {% include cards/conclusion.html %}
+        <div class="alert alert-danger">CONCLUCIONES
+            included map of the Wildlife Preserve, characterize the patterns of all of the bird species in
+            the Preserve over the time of the collection. <br/>Please assume we have a reasonable
+            distribution of sensors and human collectors providing the recordings, so that the patterns are
+            reasonably representative of the bird <br/>locations across the area. Do you detect any trends
+            or anomalies in the patterns? Please limit your answer to 10 images and 1000 words.
+        </div>
     </div>
 
 </div>
