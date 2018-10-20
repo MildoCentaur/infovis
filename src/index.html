@@ -12,53 +12,45 @@ menu: index
 
     <div class="row row-cards">
         <div class="col-md-12">
-            <div class="alert" style="height: 6rem;">Using the bird call collection and the included map of the Wildlife
-                Preserve, characterize the patterns of all of the bird species in the Preserve over the time of the
-                collection. <br/>Please assume we have a reasonable distribution of sensors and human collectors
-                providing the recordings, so that the patterns are reasonably representative of the bird <br/>locations
-                across the area. Do you detect any trends or anomalies in the patterns? Please limit your answer to 10
-                images and 1000 words.
+            <div class="alert" style="margin-bottom: 0;">The Rose-Crested Blue Pipit is the favorite bird of Mistford residents and Boonsong Lekagul Nature Preserve visitors. Kasios Furniture manufacturing company may have been a primary contributor to the apparent reduction of the number of nesting pairs of these birds. The company supposedly dumped process waste in the northeast region of the Preserve and Methylosmolene was detected in their smokestack emissions.<br/>
+                Kasios now claims that the analysis was flawed and biased therefore they have launched their own “investigation” into the Pipit situation, and they are now reporting that there are plenty of Rose-crested Blue Pipits happily living and nesting in the Preserve.
+                To back up this claim, they have provided a set of Pipit bird calls, recently recorded across the Preserve, with locations of where they were recorded. Clearly, they claim, the Pipits are a thriving population, and Kasios will provide even more supporting evidence as their investigation proceeds.
             </div>
 
         </div>
         <div class="col-6 col-sm-4 col-lg-2">
-            {% include cards/stats-1.html number="33" title="Años digitalizados" percentage=3 %}
+            {% include cards/stats-1.html number="33" title="Registered years" percentage=3 %}
         </div>
 
         <div class="col-6 col-sm-4 col-lg-2">
-            {% include cards/stats-1.html number=19 title="Especies" percentage=3 %}
+            {% include cards/stats-1.html number=19 title="Specied" percentage=3 %}
         </div>
 
         <div class="col-6 col-sm-4 col-lg-2">
-            {% include cards/stats-1.html number="2080" title="Audios registrados" percentage=2 %}
+            {% include cards/stats-1.html number="2080" title="Registered audios" percentage=2 %}
         </div>
 
         <div class="col-6 col-sm-4 col-lg-2">
-            {% include cards/stats-1.html number="8" title="Vocalizaciones" percentage=6 %}
+            {% include cards/stats-1.html number="8" title="Vocalizations" percentage=6 %}
         </div>
         <div class="col-6 col-sm-4 col-lg-2">
-            {% include cards/stats-1.html number="5" title="Calidades de sonido" percentage=9 %}
+            {% include cards/stats-1.html number="5" title="Sound qualities" percentage=9 %}
         </div>
         <div class="col-6 col-sm-4 col-lg-2">
-            {% include cards/stats-1.html number=300 title="Voluntarios" percentage=-1 %}
+            {% include cards/stats-1.html number=300 title="Volunteers" percentage=-1 %}
         </div>
         <div class="col-lg-6" >
             {% include cards/bird-history.html %}
         </div>
         <div class="col-lg-6" >
-            {% include cards/chart.html height=12 title="proporcion de pajaritos" id="chart-donut" data="donut" %}
+            {% include cards/chart.html height=12 title="Proportion of records according to type and quality" id="chart-donut" data="donut" %}
         </div>
-        <!--<div class="col-lg-6">-->
-            <!--<div class="row">-->
-                <!--<div class="col-sm-6">-->
-                    <!--{ include cards/digit.html color="red" title="cantidad de audios empresa" digit="15" width="15%" %}-->
-                <!--</div>-->
-                <!--<div class="col-sm-6">-->
-                    <!--{ include cards/digit.html color="green" title="cantidad de audios ong" digit="2081" width="100%"-->
-                    <!--%}-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
+        <div class="col-md-12">
+            <div class="alert alert-warning">
+                These graphs describes the information used for the analysis. It is shown the amount of records and the it's distribution by species and by vocalization type and quality.
+            </div>
+        </div>
+
     </div>
 
     <div class="row row-cards">
@@ -82,14 +74,21 @@ menu: index
                 </div>
                 <div class="col-md-6" >
                     {% include cards/grafico4.html %}
-                    <div class="alert alert-warning">Using the bird call collection and the
-                        included map of the Wildlife Preserve, characterize the patterns of all of the bird species in
-                        the Preserve over the time of the collection. <br/>Please assume we have a reasonable
-                        distribution of sensors and human collectors providing the recordings, so that the patterns are
-                        reasonably representative of the bird <br/>locations across the area. Do you detect any trends
-                        or anomalies in the patterns? Please limit your answer to 10 images and 1000 words.
+                    <div class="row row-cards">
+                        <div class="col-lg-6">
+                                    {%include cards/digit.html color="red" title="cantidad de audios empresa" digit="15" width="15%" %}
+                        </div>
+                        <div class="col-lg-6">
+                                {%include cards/digit.html color="green" title="cantidad de audios ong" digit="2081" width="100%"%}
+                        </div>
                     </div>
+                    <div class="alert alert-warning">
+                        The locations provided by the Kasios company are out of the usual area for the bird. Analysing the behavior of every specie, we can see that the other species remains in their historical areas while the blue-crested pipit realocated this year.
+                    </div>
+
                     {% include cards/grafico5.html %}
+                    {% include cards/grafico5b.html %}
+
                 </div>
             </div>
         </div>
@@ -97,43 +96,43 @@ menu: index
     </div>
 
 
-    <div class="col-md-6 col-lg-12">
-        <div class="row">
-            <div class="col-sm-6 col-lg-3">
-                {% include cards/chart-bg.html id="chart-bg-users-1" %}
-            </div>
-            <div class="col-sm-6 col-lg-3">
-                {% include cards/chart-bg.html id="chart-bg-users-2" offset=60 aggregate=true color="red" rate="-3%"
-                %}
-            </div>
-            <div class="col-sm-6 col-lg-3">
-                {% include cards/chart-bg.html id="chart-bg-users-3" offset=50 color="green" rate="-3%" %}
-            </div>
-            <div class="col-sm-6 col-lg-3">
-                {% include cards/chart-bg.html id="chart-bg-users-4" offset=40 color="yellow" rate="9%" %}
-            </div>
-        </div>
-    </div>
+    <!--<div class="col-md-6 col-lg-12">-->
+        <!--<div class="row">-->
+            <!--<div class="col-sm-6 col-lg-3">-->
+                <!--{ % include cards/chart-bg.html id="chart-bg-users-1" %}-->
+            <!--</div>-->
+            <!--<div class="col-sm-6 col-lg-3">-->
+                <!--{ % include cards/chart-bg.html id="chart-bg-users-2" offset=60 aggregate=true color="red" rate="-3%"-->
+                <!--%}-->
+            <!--</div>-->
+            <!--<div class="col-sm-6 col-lg-3">-->
+                <!--{% include cards/chart-bg.html id="chart-bg-users-3" offset=50 color="green" rate="-3%" %}-->
+            <!--</div>-->
+            <!--<div class="col-sm-6 col-lg-3">-->
+                <!--{% include cards/chart-bg.html id="chart-bg-users-4" offset=40 color="yellow" rate="9%" %}-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
 
-    <div class="col-md-6 col-lg-12">
-        <div class="row row-cards row-deck">
-            <div class="col-sm-6 col-lg-6">
-                {% include cards/browsers.html %}
-            </div>
-            <div class="col-sm-6 col-lg-6">
-                {% include cards/projects-list.html %}
-            </div>
-        </div>
-    </div>
+    <!--<div class="col-md-6 col-lg-12">-->
+        <!--<div class="row row-cards row-deck">-->
+            <!--<div class="col-sm-6 col-lg-6">-->
+                <!--{% include cards/browsers.html %}-->
+            <!--</div>-->
+            <!--<div class="col-sm-6 col-lg-6">-->
+                <!--{% include cards/projects-list.html %}-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
 
 
     <div class="col-lg-12">
-        <div class="alert alert-danger">CONCLUCIONES
-            included map of the Wildlife Preserve, characterize the patterns of all of the bird species in
-            the Preserve over the time of the collection. <br/>Please assume we have a reasonable
-            distribution of sensors and human collectors providing the recordings, so that the patterns are
-            reasonably representative of the bird <br/>locations across the area. Do you detect any trends
-            or anomalies in the patterns? Please limit your answer to 10 images and 1000 words.
+        <div class="alert alert-danger">
+            It is concluded:
+            <ul>
+                <li>The Blue-crested Pipit population was relocated in a different area than its usual living area.</li>
+                <li>The other bird species didn't alter their behaviour.</li>
+                <li>The Blue-crested Pipit population was relocated in the past as well for reasons unknown.</li>
         </div>
     </div>
 
