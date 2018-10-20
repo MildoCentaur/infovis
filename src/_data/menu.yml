@@ -1,0 +1,14 @@
+index:
+  name: Analisis de datos
+  icon: fe fe-home
+  url: index.html
+
+pregunta2:
+  name: Audios
+  icon: fa fa-question-circle-o
+  url: cards.html
+
+components:
+  name: cambiar 3
+  icon: fa fa-question-circle-o
+  url: blog.html
